@@ -325,7 +325,7 @@ void bootloader(void) {
 	// Initialise the UART for 31250bps receive
     SIM->SCGC |= SIM_SCGC_UART0_MASK;
 	UART0->BDH = 0;
-	UART0->BDL = 40;
+	UART0->BDL = 48;
     UART0->C2 |= UART_C2_RE_MASK;
 
 	// set LEDs to initial state

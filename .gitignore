@@ -210,9 +210,3 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-
-
-.metadata/.plugins/org.eclipse.cdt.ui/global-build.log
-.metadata/.plugins/org.eclipse.cdt.ui/MKE04_MIDI_Bootloader.build.log
-MKE04_MIDI_Bootloader/Release/MKE04_MIDI_Bootloader.axf
-MKE04_MIDI_Bootloader/Release/MKE04_MIDI_Bootloader.map
