@@ -117,7 +117,7 @@ Discarded input sections
 Memory Configuration
 
 Name             Origin             Length             Attributes
-PROGRAM_FLASH    0x00000000         0x00020000         xr
+PROGRAM_FLASH    0x00000000         0x00000600         xr
 SRAM             0x1ffff000         0x00004000         xrw
 *default*        0x00000000         0xffffffff
 
@@ -137,8 +137,8 @@ LOAD c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32
 END GROUP
                 0x00000000                __base_PROGRAM_FLASH = 0x0
                 0x00000000                __base_Flash = 0x0
-                0x00020000                __top_PROGRAM_FLASH = 0x20000
-                0x00020000                __top_Flash = 0x20000
+                0x00000600                __top_PROGRAM_FLASH = 0x600
+                0x00000600                __top_Flash = 0x600
                 0x1ffff000                __base_SRAM = 0x1ffff000
                 0x1ffff000                __base_RAM = 0x1ffff000
                 0x20003000                __top_SRAM = 0x20003000
