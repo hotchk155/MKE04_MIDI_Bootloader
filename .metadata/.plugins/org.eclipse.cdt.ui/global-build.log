@@ -1,0 +1,448 @@
+21:15:47 **** Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../startup/startup_mke04z1284.c
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+Building file: ../source/semihost_hardfault.c
+Building file: ../board/clock_config.c
+Building file: ../board/peripherals.c
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"startup/startup_mke04z1284.d" -MT"startup/startup_mke04z1284.o" -MT"startup/startup_mke04z1284.d" -o "startup/startup_mke04z1284.o" "../startup/startup_mke04z1284.c"
+Building file: ../board/board.c
+Building file: ../board/pin_mux.c
+Building file: ../device/system_MKE04Z1284.c
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/semihost_hardfault.d" -MT"source/semihost_hardfault.o" -MT"source/semihost_hardfault.d" -o "source/semihost_hardfault.o" "../source/semihost_hardfault.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"device/system_MKE04Z1284.d" -MT"device/system_MKE04Z1284.o" -MT"device/system_MKE04Z1284.d" -o "device/system_MKE04Z1284.o" "../device/system_MKE04Z1284.c"
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../board/board.c"
+../source/main.c: In function 'ResetISR':
+../source/main.c:193:8: error: 'PORT_Type {aka struct <anonymous>}' has no member named 'PUEH'; did you mean 'PUE0'?
+  PORT->PUEH |= (GPIOB_BIT_E1);
+        ^~~~
+        PUE0
+../source/main.c: In function 'fc_init':
+../source/main.c:263:10: error: 'FTMRH' undeclared (first use in this function); did you mean 'FTMRE'?
+  while(!(FTMRH->FSTAT & 0x80));
+          ^~~~~
+          FTMRE
+../source/main.c:263:10: note: each undeclared identifier is reported only once for each function it appears in
+../source/main.c: In function 'fc_param':
+../source/main.c:271:5: error: 'FTMRH' undeclared (first use in this function); did you mean 'FTMRE'?
+     FTMRH->FCCOBIX = index;
+     ^~~~~
+     FTMRE
+../source/main.c: In function 'fc_run':
+../source/main.c:282:10: error: 'FTMRH' undeclared (first use in this function); did you mean 'FTMRE'?
+  while(!(FTMRH->FSTAT & 0x80));  // ensure flash module is idle
+          ^~~~~
+          FTMRE
+../source/main.c: In function 'bootloader':
+../source/main.c:336:10: error: 'SIM_Type {aka struct <anonymous>}' has no member named 'BUSDIV'; did you mean 'CLKDIV'?
+     SIM->BUSDIV = 0x01;
+          ^~~~~~
+          CLKDIV
+make: *** [source/subdir.mk:23: source/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+Finished building: ../board/peripherals.c
+Finished building: ../source/semihost_hardfault.c
+Finished building: ../board/pin_mux.c
+ 
+Finished building: ../board/board.c
+ 
+ 
+ 
+Finished building: ../board/clock_config.c
+Finished building: ../startup/startup_mke04z1284.c
+Finished building: ../device/system_MKE04Z1284.c
+ 
+ 
+ 
+10:03:20 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'ResetISR':
+../source/main.c:193:8: error: 'PORT_Type {aka struct <anonymous>}' has no member named 'PUEH'; did you mean 'PUE0'?
+  PORT->PUEH |= (GPIOB_BIT_E1);
+        ^~~~
+        PUE0
+../source/main.c: In function 'fc_init':
+../source/main.c:263:10: error: 'FTMRH' undeclared (first use in this function); did you mean 'FTMRE'?
+  while(!(FTMRH->FSTAT & 0x80));
+          ^~~~~
+          FTMRE
+../source/main.c:263:10: note: each undeclared identifier is reported only once for each function it appears in
+../source/main.c: In function 'fc_param':
+../source/main.c:271:5: error: 'FTMRH' undeclared (first use in this function); did you mean 'FTMRE'?
+     FTMRH->FCCOBIX = index;
+     ^~~~~
+     FTMRE
+../source/main.c: In function 'fc_run':
+../source/main.c:282:10: error: 'FTMRH' undeclared (first use in this function); did you mean 'FTMRE'?
+  while(!(FTMRH->FSTAT & 0x80));  // ensure flash module is idle
+          ^~~~~
+          FTMRE
+../source/main.c: In function 'bootloader':
+../source/main.c:336:10: error: 'SIM_Type {aka struct <anonymous>}' has no member named 'BUSDIV'; did you mean 'CLKDIV'?
+     SIM->BUSDIV = 0x01;
+          ^~~~~~
+          CLKDIV
+make: *** [source/subdir.mk:23: source/main.o] Error 1
+10:07:50 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'fc_run':
+../source/main.c:287:2: error: 'FTMRH' undeclared (first use in this function); did you mean 'FTMRE'?
+  FTMRH->FSTAT |= 0x80;    // kick off the command
+  ^~~~~
+  FTMRE
+../source/main.c:287:2: note: each undeclared identifier is reported only once for each function it appears in
+../source/main.c: In function 'bootloader':
+../source/main.c:336:10: error: 'SIM_Type {aka struct <anonymous>}' has no member named 'BUSDIV'; did you mean 'CLKDIV'?
+     SIM->BUSDIV = 0x01;
+          ^~~~~~
+          CLKDIV
+make: *** [source/subdir.mk:23: source/main.o] Error 1
+10:08:01 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+../source/main.c: In function 'bootloader':
+../source/main.c:336:10: error: 'SIM_Type {aka struct <anonymous>}' has no member named 'BUSDIV'; did you mean 'CLKDIV'?
+     SIM->BUSDIV = 0x01;
+          ^~~~~~
+          CLKDIV
+make: *** [source/subdir.mk:23: source/main.o] Error 1
+10:15:42 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Debug.ld -o "MKE04Z128xxx4_Project.axf"  ./startup/startup_mke04z1284.o  ./source/main.o ./source/semihost_hardfault.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+./source/main.o:D:\GitHub\MKE02_MIDI_Bootloader2\MKE04Z128xxx4_Project\Debug/../source/main.c:111: multiple definition of `Flash_Config'
+./startup/startup_mke04z1284.o:D:\GitHub\MKE02_MIDI_Bootloader2\MKE04Z128xxx4_Project\Debug/../startup/startup_mke04z1284.c:52: first defined here
+./source/main.o:(.isr_vector+0x0): multiple definition of `g_pfnVectors'
+./startup/startup_mke04z1284.o:(.isr_vector+0x0): first defined here
+./source/main.o: In function `ResetISR':
+D:\GitHub\MKE02_MIDI_Bootloader2\MKE04Z128xxx4_Project\Debug/../source/main.c:178: multiple definition of `ResetISR'
+./startup/startup_mke04z1284.o:D:\GitHub\MKE02_MIDI_Bootloader2\MKE04Z128xxx4_Project\Debug/../startup/startup_mke04z1284.c:270: first defined here
+./source/main.o:(.isr_vector+0x0): multiple definition of `__Vectors'
+./startup/startup_mke04z1284.o:(.isr_vector+0x0): first defined here
+MKE04Z128xxx4_Project_Debug.ld:43 cannot move location counter backwards (from 00000748 to 00000400)
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:35: MKE04Z128xxx4_Project.axf] Error 1
+10:39:47 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Debug.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+MKE04Z128xxx4_Project_Debug.ld:43 cannot move location counter backwards (from 000005fc to 00000400)
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:35: MKE04Z128xxx4_Project.axf] Error 1
+10:59:17 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Debug.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+MKE04Z128xxx4_Project_Debug.ld:43 cannot move location counter backwards (from 00000600 to 00000400)
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:34: MKE04Z128xxx4_Project.axf] Error 1
+10:59:56 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Debug.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+MKE04Z128xxx4_Project_Debug.ld:43 cannot move location counter backwards (from 00000558 to 00000400)
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:34: MKE04Z128xxx4_Project.axf] Error 1
+11:00:02 **** Incremental Build of configuration Debug for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -O0 -fno-common -g3 -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Debug.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+MKE04Z128xxx4_Project_Debug.ld:43 cannot move location counter backwards (from 00000600 to 00000400)
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:34: MKE04Z128xxx4_Project.axf] Error 1
+11:00:23 **** Build of configuration Release for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Building file: ../device/system_MKE04Z1284.c
+Building file: ../board/board.c
+Building file: ../board/clock_config.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"device/system_MKE04Z1284.d" -MT"device/system_MKE04Z1284.o" -MT"device/system_MKE04Z1284.d" -o "device/system_MKE04Z1284.o" "../device/system_MKE04Z1284.c"
+Building file: ../board/peripherals.c
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../board/board.c"
+Invoking: MCU C Compiler
+Building file: ../board/pin_mux.c
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+Finished building: ../board/board.c
+Finished building: ../board/clock_config.c
+Finished building: ../device/system_MKE04Z1284.c
+ 
+ 
+Finished building: ../board/pin_mux.c
+Finished building: ../board/peripherals.c
+ 
+ 
+ 
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Release.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+MKE04Z128xxx4_Project_Release.ld:43 cannot move location counter backwards (from 0000041c to 00000400)
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:34: MKE04Z128xxx4_Project.axf] Error 1
+11:00:29 **** Incremental Build of configuration Release for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Release.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        1248 B       128 KB      0.95%
+            SRAM:        2060 B        16 KB     12.57%
+Finished building target: MKE04Z128xxx4_Project.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "MKE04Z128xxx4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "MKE04Z128xxx4_Project.axf" "MKE04Z128xxx4_Project.bin" ; # checksum -p MKE04Z128xxx4 -d "MKE04Z128xxx4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1248	      0	   2060	   3308	    cec	MKE04Z128xxx4_Project.axf
+ 
+11:01:15 **** Incremental Build of configuration Release for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Release.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        1248 B       128 KB      0.95%
+            SRAM:        2060 B        16 KB     12.57%
+Finished building target: MKE04Z128xxx4_Project.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "MKE04Z128xxx4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "MKE04Z128xxx4_Project.axf" "MKE04Z128xxx4_Project.bin" ; # checksum -p MKE04Z128xxx4 -d "MKE04Z128xxx4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1248	      0	   2060	   3308	    cec	MKE04Z128xxx4_Project.axf
+ 
+11:01:26 **** Incremental Build of configuration Release for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Release.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+MKE04Z128xxx4_Project_Release.ld:43 cannot move location counter backwards (from 00000408 to 00000400)
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:34: MKE04Z128xxx4_Project.axf] Error 1
+11:01:32 **** Incremental Build of configuration Release for project MKE04Z128xxx4_Project ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04Z128xxx4_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04Z128xxx4_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T MKE04Z128xxx4_Project_Release.ld -o "MKE04Z128xxx4_Project.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        1156 B       128 KB      0.88%
+            SRAM:        2060 B        16 KB     12.57%
+Finished building target: MKE04Z128xxx4_Project.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "MKE04Z128xxx4_Project.axf"; # arm-none-eabi-objcopy -v -O binary "MKE04Z128xxx4_Project.axf" "MKE04Z128xxx4_Project.bin" ; # checksum -p MKE04Z128xxx4 -d "MKE04Z128xxx4_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1156	      0	   2060	   3216	    c90	MKE04Z128xxx4_Project.axf
+ 
+11:02:23 **** Clean-only build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 clean 
+rm -rf  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./source/main.d  ./device/system_MKE04Z1284.d  ./board/board.d ./board/clock_config.d ./board/peripherals.d ./board/pin_mux.d  MKE04Z128xxx4_Project.axf
+ 
+11:02:23 **** Clean-only build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 clean 
+rm -rf  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./source/main.d  ./device/system_MKE04Z1284.d  ./board/board.d ./board/clock_config.d ./board/peripherals.d ./board/pin_mux.d  MKE04Z128xxx4_Project.axf
+ 
+11:02:23 **** Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+Building file: ../source/main.c
+Building file: ../device/system_MKE04Z1284.c
+Building file: ../board/peripherals.c
+Building file: ../board/board.c
+Building file: ../board/clock_config.c
+Building file: ../board/pin_mux.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../board/board.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"device/system_MKE04Z1284.d" -MT"device/system_MKE04Z1284.o" -MT"device/system_MKE04Z1284.d" -o "device/system_MKE04Z1284.o" "../device/system_MKE04Z1284.c"
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+Finished building: ../board/board.c
+Finished building: ../board/peripherals.c
+Finished building: ../board/pin_mux.c
+ 
+ 
+Finished building: ../board/clock_config.c
+ 
+ 
+Finished building: ../device/system_MKE04Z1284.c
+ 
+Finished building: ../source/main.c
+ 
+Building target: MKE04_MIDI_Bootloader.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04_MIDI_Bootloader.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T "MKE04_MIDI_Bootloader_Release.ld" -o "MKE04_MIDI_Bootloader.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        1156 B       128 KB      0.88%
+            SRAM:        2060 B        16 KB     12.57%
+Finished building target: MKE04_MIDI_Bootloader.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "MKE04_MIDI_Bootloader.axf"; # arm-none-eabi-objcopy -v -O binary "MKE04_MIDI_Bootloader.axf" "MKE04_MIDI_Bootloader.bin" ; # checksum -p MKE04Z128xxx4 -d "MKE04_MIDI_Bootloader.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1156	      0	   2060	   3216	    c90	MKE04_MIDI_Bootloader.axf
+ 
+11:43:59 **** Incremental Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+11:44:03 **** Incremental Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+11:45:07 **** Incremental Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+Building file: ../source/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: MKE04_MIDI_Bootloader.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04_MIDI_Bootloader.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T "MKE04_MIDI_Bootloader_Release.ld" -o "MKE04_MIDI_Bootloader.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        1156 B       128 KB      0.88%
+            SRAM:        2060 B        16 KB     12.57%
+Finished building target: MKE04_MIDI_Bootloader.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "MKE04_MIDI_Bootloader.axf"; # arm-none-eabi-objcopy -v -O binary "MKE04_MIDI_Bootloader.axf" "MKE04_MIDI_Bootloader.bin" ; # checksum -p MKE04Z128xxx4 -d "MKE04_MIDI_Bootloader.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1156	      0	   2060	   3216	    c90	MKE04_MIDI_Bootloader.axf
+ 
+11:47:40 **** Clean-only build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 clean 
+rm -rf  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./source/main.d  ./device/system_MKE04Z1284.d  ./board/board.d ./board/clock_config.d ./board/peripherals.d ./board/pin_mux.d  MKE04_MIDI_Bootloader.axf
+ 
+11:47:40 **** Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+Building file: ../source/main.c
+Building file: ../device/system_MKE04Z1284.c
+Building file: ../board/board.c
+Building file: ../board/clock_config.c
+Invoking: MCU C Compiler
+Building file: ../board/peripherals.c
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"source/main.d" -MT"source/main.o" -MT"source/main.d" -o "source/main.o" "../source/main.c"
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"device/system_MKE04Z1284.d" -MT"device/system_MKE04Z1284.o" -MT"device/system_MKE04Z1284.d" -o "device/system_MKE04Z1284.o" "../device/system_MKE04Z1284.c"
+Invoking: MCU C Compiler
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/board.d" -MT"board/board.o" -MT"board/board.d" -o "board/board.o" "../boaInvoking: MCU C Compiler
+rd/board.c"
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/clock_config.d" -MT"board/clock_config.o" -MT"board/clock_config.d" -o "board/clock_config.o" "../board/clock_config.c"
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/peripherals.d" -MT"board/peripherals.o" -MT"board/peripherals.d" -o "board/peripherals.o" "../board/peripherals.c"
+Building file: ../board/pin_mux.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DFSL_RTOS_BM -DSDK_OS_BAREMETAL -DSDK_DEBUGCONSOLE=0 -DCR_INTEGER_PRINTF -DPRINTF_FLOAT_ENABLE=0 -DCPU_MKE04Z128VLD4 -DCPU_MKE04Z128VLD4_cm0plus -D__MCUXPRESSO -D__USE_CMSIS -DNDEBUG -D__REDLIB__ -I../board -I../source -I../ -I../CMSIS -I../device -Os -fno-common -g -Wall -c -ffunction-sections -fdata-sections -ffreestanding -fno-builtin -mcpu=cortex-m0plus -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -MT"board/pin_mux.d" -o "board/pin_mux.o" "../board/pin_mux.c"
+Finished building: ../board/board.c
+Finished building: ../board/peripherals.c
+Finished building: ../device/system_MKE04Z1284.c
+ 
+ 
+Finished building: ../board/clock_config.c
+ 
+Finished building: ../board/pin_mux.c
+ 
+ 
+Finished building: ../source/main.c
+ 
+Building target: MKE04_MIDI_Bootloader.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="MKE04_MIDI_Bootloader.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -mcpu=cortex-m0plus -mthumb -T "MKE04_MIDI_Bootloader_Release.ld" -o "MKE04_MIDI_Bootloader.axf"  ./source/main.o  ./device/system_MKE04Z1284.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:        1156 B       128 KB      0.88%
+            SRAM:        2060 B        16 KB     12.57%
+Finished building target: MKE04_MIDI_Bootloader.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "MKE04_MIDI_Bootloader.axf"; # arm-none-eabi-objcopy -v -O binary "MKE04_MIDI_Bootloader.axf" "MKE04_MIDI_Bootloader.bin" ; # checksum -p MKE04Z128xxx4 -d "MKE04_MIDI_Bootloader.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1156	      0	   2060	   3216	    c90	MKE04_MIDI_Bootloader.axf
+ 
+11:48:04 **** Incremental Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+11:48:23 **** Incremental Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.

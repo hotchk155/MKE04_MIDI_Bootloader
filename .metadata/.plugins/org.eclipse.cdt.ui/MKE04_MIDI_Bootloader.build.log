@@ -1,0 +1,6 @@
+11:48:23 **** Incremental Build of configuration Release for project MKE04_MIDI_Bootloader ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+
+11:48:23 Build Finished (took 93ms)
+
