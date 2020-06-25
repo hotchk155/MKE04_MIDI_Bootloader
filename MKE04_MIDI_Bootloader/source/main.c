@@ -17,7 +17,7 @@
 // INCLUDES
 //
 #include "MKE04Z1284.h"
-
+//#define NB_PROTOTYPE 1
 
 //
 // MACRO DEFS
@@ -52,11 +52,27 @@
 #define GPIOA_BIT_C3 (1U<<((2*8) + 3))
 #define GPIOB_BIT_E1 (1U<<((0*8) + 1))
 #define GPIOB_BIT_E2 (1U<<((0*8) + 2))
+#define GPIOB_BIT_E7 (1U<<((0*8) + 7))
+
+#if NB_PROTOTYPE
+	#define GPIOB_BIT_POWERSWITCH	GPIOB_BIT_E1
+#else
+	#define GPIOB_BIT_POWERSWITCH	GPIOB_BIT_E7
+#endif
+
+/*
+ CDigitalOut PowerControl(kGPIO_PORTE, 2);
+ CDigitalIn OffSwitch(kGPIO_PORTE, 7);
+
+  CPulseOut g_gate_led(kGPIO_PORTB, 5);
+ CPulseOut g_tempo_led(kGPIO_PORTC, 2);
+ CPulseOut g_midi_led(kGPIO_PORTC, 3);
+*/
 
 // helper macros for LEDs
-#define LED_BLUE 	GPIOA_BIT_C2
-#define LED_YELLOW 	GPIOA_BIT_C3
-#define LED_RED 	GPIOA_BIT_B5
+#define LED_1 	GPIOA_BIT_C2
+#define LED_2 	GPIOA_BIT_C3
+#define LED_3 	GPIOA_BIT_B5
 #define LED_ON(b) 	GPIOA->PSOR = (b)
 #define LED_OFF(b) 	GPIOA->PCOR = (b)
 
@@ -187,20 +203,18 @@ void ResetISR(void) {
     WDOG->CS2 |= 0;
     __asm volatile ("cpsie i");
 
+
     // configure the digital input for the "off" switch
     // and allow to settle
-	GPIOB->PDDR &= ~(GPIOB_BIT_E1);
-	GPIOB->PIDR &= ~(GPIOB_BIT_E1);
-	PORT->PUE1 |= (GPIOB_BIT_E1);
+	GPIOB->PDDR &= ~(GPIOB_BIT_POWERSWITCH);
+	GPIOB->PIDR &= ~(GPIOB_BIT_POWERSWITCH);
+	PORT->PUE1 |= (GPIOB_BIT_POWERSWITCH);
     delay(10);
-
-    // latch the power on
-	GPIOB->PDDR |= GPIOB_BIT_E2;
-	GPIOB->PSOR = GPIOB_BIT_E2;
 
 	// is the "off" switch being pressed? (this is the user option
 	// to start up the bootloader at power on
-    if(!(GPIOB->PDIR & GPIOB_BIT_E1)) {
+    if(!(GPIOB->PDIR & GPIOB_BIT_POWERSWITCH)) {
+
     	// run the bootloader (should not return)
     	bootloader();
     }
@@ -243,16 +257,16 @@ void delay(int count) {
 // Report an error by flashing red LED
 ///////////////////////////////////////////////////////////////////////////
 void error(int code) {
-	LED_OFF(LED_BLUE);
-	LED_OFF(LED_YELLOW);
+	LED_OFF(LED_1);
+	LED_OFF(LED_2);
 	for(;;) {
 		for(int i=0; i<code; ++i) {
-			LED_ON(LED_RED);
-			delay(200);
-			LED_OFF(LED_RED);
-			delay(200);
+			LED_ON(LED_3);
+			delay(500);
+			LED_OFF(LED_3);
+			delay(500);
 		}
-		delay(500);
+		delay(2000);
 	}
 }
 
@@ -319,6 +333,10 @@ void bootloader(void) {
     while (!(ICS->S & 0x40));
     ICS->S |= 0x80; // clear loss of lock flag
 
+    // latch the power on
+	GPIOB->PDDR |= GPIOB_BIT_E2;
+	GPIOB->PSOR = GPIOB_BIT_E2;
+
     // Initialise GPIO for LEDs and switch
 	GPIOA->PDDR |= (GPIOA_BIT_B5|GPIOA_BIT_C2|GPIOA_BIT_C3);
 
@@ -329,9 +347,9 @@ void bootloader(void) {
     UART0->C2 |= UART_C2_RE_MASK;
 
 	// set LEDs to initial state
-    LED_ON(LED_BLUE);
-    LED_ON(LED_YELLOW);
-    LED_OFF(LED_RED) ;
+    LED_ON(LED_1);
+    LED_ON(LED_2);
+    LED_OFF(LED_3) ;
 
 	int i;
     int seq_no = 0;
@@ -390,11 +408,11 @@ void bootloader(void) {
     	// end of data
     	if(!sysex[SYSEX_SEQ_OFS]) {
     		for(;;) {
-    			LED_ON(LED_BLUE);
-    		    LED_OFF(LED_YELLOW);
+    			LED_ON(LED_1);
+    		    LED_OFF(LED_2);
     			delay(200);
-    			LED_OFF(LED_BLUE);
-    		    LED_ON(LED_YELLOW);
+    			LED_OFF(LED_1);
+    		    LED_ON(LED_2);
     			delay(200);
     		}
     	}
@@ -464,10 +482,10 @@ void bootloader(void) {
 
     	// toggle the blue LED with each data block
     	if(seq_no & 1) {
-    		LED_ON(LED_BLUE);
+    		LED_ON(LED_1);
     	}
     	else {
-    		LED_OFF(LED_BLUE);
+    		LED_OFF(LED_1);
     	}
     }
 }
