@@ -1,9 +1,9 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_32.o)
+c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
                               ./device/system_MKE04Z1284.o (__aeabi_idiv)
-c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_idiv0.o)
-                              c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_32.o) (__aeabi_idiv0)
+c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+                              c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o) (__aeabi_idiv0)
 
 Discarded input sections
 
@@ -16,103 +16,103 @@ Discarded input sections
  .data          0x00000000        0x0 ./device/system_MKE04Z1284.o
  .bss           0x00000000        0x0 ./device/system_MKE04Z1284.o
  .text.SystemCoreClockUpdate
-                0x00000000       0x7c ./device/system_MKE04Z1284.o
+                0x00000000       0x74 ./device/system_MKE04Z1284.o
  .text.SystemInitHook
                 0x00000000        0x2 ./device/system_MKE04Z1284.o
  .text.SystemInit
                 0x00000000       0x38 ./device/system_MKE04Z1284.o
  .data.SystemCoreClock
                 0x00000000        0x4 ./device/system_MKE04Z1284.o
- .debug_info    0x00000000      0x2da ./device/system_MKE04Z1284.o
- .debug_abbrev  0x00000000      0x157 ./device/system_MKE04Z1284.o
- .debug_loc     0x00000000       0x68 ./device/system_MKE04Z1284.o
+ .debug_info    0x00000000      0x314 ./device/system_MKE04Z1284.o
+ .debug_abbrev  0x00000000      0x178 ./device/system_MKE04Z1284.o
+ .debug_loc     0x00000000       0x8f ./device/system_MKE04Z1284.o
  .debug_aranges
                 0x00000000       0x30 ./device/system_MKE04Z1284.o
  .debug_ranges  0x00000000       0x20 ./device/system_MKE04Z1284.o
- .debug_line    0x00000000      0x1d4 ./device/system_MKE04Z1284.o
- .debug_str     0x00000000      0x28e ./device/system_MKE04Z1284.o
- .comment       0x00000000       0x80 ./device/system_MKE04Z1284.o
- .debug_frame   0x00000000       0x54 ./device/system_MKE04Z1284.o
+ .debug_line    0x00000000      0x279 ./device/system_MKE04Z1284.o
+ .debug_str     0x00000000      0x2b4 ./device/system_MKE04Z1284.o
+ .comment       0x00000000       0x77 ./device/system_MKE04Z1284.o
+ .debug_frame   0x00000000       0x50 ./device/system_MKE04Z1284.o
  .ARM.attributes
-                0x00000000       0x32 ./device/system_MKE04Z1284.o
+                0x00000000       0x2c ./device/system_MKE04Z1284.o
  .text          0x00000000        0x0 ./board/board.o
  .data          0x00000000        0x0 ./board/board.o
  .bss           0x00000000        0x0 ./board/board.o
  .text.BOARD_InitDebugConsole
                 0x00000000        0x2 ./board/board.o
- .debug_info    0x00000000       0xb2 ./board/board.o
- .debug_abbrev  0x00000000       0x82 ./board/board.o
+ .debug_info    0x00000000       0xb6 ./board/board.o
+ .debug_abbrev  0x00000000       0x88 ./board/board.o
  .debug_aranges
                 0x00000000       0x20 ./board/board.o
  .debug_ranges  0x00000000       0x10 ./board/board.o
- .debug_line    0x00000000       0xcd ./board/board.o
- .debug_str     0x00000000      0x1cd ./board/board.o
- .comment       0x00000000       0x80 ./board/board.o
+ .debug_line    0x00000000       0xd1 ./board/board.o
+ .debug_str     0x00000000      0x1f3 ./board/board.o
+ .comment       0x00000000       0x77 ./board/board.o
  .debug_frame   0x00000000       0x20 ./board/board.o
  .ARM.attributes
-                0x00000000       0x32 ./board/board.o
+                0x00000000       0x2c ./board/board.o
  .text          0x00000000        0x0 ./board/clock_config.o
  .data          0x00000000        0x0 ./board/clock_config.o
  .bss           0x00000000        0x0 ./board/clock_config.o
  .text.BOARD_InitBootClocks
                 0x00000000        0x8 ./board/clock_config.o
- .debug_info    0x00000000       0xe1 ./board/clock_config.o
- .debug_abbrev  0x00000000       0xad ./board/clock_config.o
+ .debug_info    0x00000000       0xe8 ./board/clock_config.o
+ .debug_abbrev  0x00000000       0xb7 ./board/clock_config.o
  .debug_aranges
                 0x00000000       0x20 ./board/clock_config.o
  .debug_ranges  0x00000000       0x10 ./board/clock_config.o
- .debug_line    0x00000000      0x177 ./board/clock_config.o
- .debug_str     0x00000000      0x201 ./board/clock_config.o
- .comment       0x00000000       0x80 ./board/clock_config.o
+ .debug_line    0x00000000      0x184 ./board/clock_config.o
+ .debug_str     0x00000000      0x227 ./board/clock_config.o
+ .comment       0x00000000       0x77 ./board/clock_config.o
  .debug_frame   0x00000000       0x28 ./board/clock_config.o
  .ARM.attributes
-                0x00000000       0x32 ./board/clock_config.o
+                0x00000000       0x2c ./board/clock_config.o
  .text          0x00000000        0x0 ./board/peripherals.o
  .data          0x00000000        0x0 ./board/peripherals.o
  .bss           0x00000000        0x0 ./board/peripherals.o
  .text.BOARD_InitBootPeripherals
                 0x00000000        0x2 ./board/peripherals.o
- .debug_info    0x00000000       0x37 ./board/peripherals.o
- .debug_abbrev  0x00000000       0x2c ./board/peripherals.o
+ .debug_info    0x00000000       0x38 ./board/peripherals.o
+ .debug_abbrev  0x00000000       0x2e ./board/peripherals.o
  .debug_aranges
                 0x00000000       0x20 ./board/peripherals.o
  .debug_ranges  0x00000000       0x10 ./board/peripherals.o
- .debug_line    0x00000000       0x47 ./board/peripherals.o
- .debug_str     0x00000000      0x127 ./board/peripherals.o
- .comment       0x00000000       0x80 ./board/peripherals.o
+ .debug_line    0x00000000       0x4b ./board/peripherals.o
+ .debug_str     0x00000000      0x14d ./board/peripherals.o
+ .comment       0x00000000       0x77 ./board/peripherals.o
  .debug_frame   0x00000000       0x20 ./board/peripherals.o
  .ARM.attributes
-                0x00000000       0x32 ./board/peripherals.o
+                0x00000000       0x2c ./board/peripherals.o
  .text          0x00000000        0x0 ./board/pin_mux.o
  .data          0x00000000        0x0 ./board/pin_mux.o
  .bss           0x00000000        0x0 ./board/pin_mux.o
  .text.BOARD_InitBootPins
                 0x00000000        0x2 ./board/pin_mux.o
- .debug_info    0x00000000       0x37 ./board/pin_mux.o
- .debug_abbrev  0x00000000       0x2c ./board/pin_mux.o
+ .debug_info    0x00000000       0x38 ./board/pin_mux.o
+ .debug_abbrev  0x00000000       0x2e ./board/pin_mux.o
  .debug_aranges
                 0x00000000       0x20 ./board/pin_mux.o
  .debug_ranges  0x00000000       0x10 ./board/pin_mux.o
- .debug_line    0x00000000       0x43 ./board/pin_mux.o
- .debug_str     0x00000000      0x11c ./board/pin_mux.o
- .comment       0x00000000       0x80 ./board/pin_mux.o
+ .debug_line    0x00000000       0x47 ./board/pin_mux.o
+ .debug_str     0x00000000      0x142 ./board/pin_mux.o
+ .comment       0x00000000       0x77 ./board/pin_mux.o
  .debug_frame   0x00000000       0x20 ./board/pin_mux.o
  .ARM.attributes
-                0x00000000       0x32 ./board/pin_mux.o
- .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_32.o)
- .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_32.o)
- .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_32.o)
+                0x00000000       0x2c ./board/pin_mux.o
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
  .text.__aeabi_division_idivmod
-                0x00000000       0x78 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_32.o)
+                0x00000000       0x78 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
  .ARM.attributes
-                0x00000000       0x21 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_32.o)
- .text          0x00000000        0x0 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_idiv0.o)
- .data          0x00000000        0x0 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_idiv0.o)
- .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_idiv0.o)
+                0x00000000       0x1c c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_32.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
  .text.__aeabi_division_idiv0
-                0x00000000        0x2 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_idiv0.o)
+                0x00000000        0x2 c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
  .ARM.attributes
-                0x00000000       0x21 c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a(division_idiv0.o)
+                0x00000000       0x1c c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a(division_idiv0.o)
 
 Memory Configuration
 
@@ -130,10 +130,10 @@ LOAD ./board/clock_config.o
 LOAD ./board/peripherals.o
 LOAD ./board/pin_mux.o
 START GROUP
-LOAD c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_semihost_nf.a
-LOAD c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libcr_c.a
-LOAD c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libcr_eabihelpers.a
-LOAD c:/nxp/mcuxpressoide_10.3.1_2233/ide/plugins/com.nxp.mcuxpresso.tools.win32_10.3.0.201811011841/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m\libgcc.a
+LOAD c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost_nf.a
+LOAD c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a
+LOAD c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libcr_eabihelpers.a
+LOAD c:/nxp/mcuxpressoide_11.1.0_3209/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.1.0.201909161352/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp\libgcc.a
 END GROUP
                 0x00000000                __base_PROGRAM_FLASH = 0x0
                 0x00000000                __base_Flash = 0x0
@@ -144,7 +144,7 @@ END GROUP
                 0x20003000                __top_SRAM = 0x20003000
                 0x20003000                __top_RAM = 0x20003000
 
-.text           0x00000000      0x484
+.text           0x00000000      0x488
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(SORT_BY_ALIGNMENT(.isr_vector))
@@ -154,7 +154,7 @@ END GROUP
                 0x000000b8                . = ALIGN (0x4)
                 0x000000b8                __section_table_start = .
                 0x000000b8                __data_section_table = .
-                0x000000b8        0x4 LONG 0x484 LOADADDR (.data)
+                0x000000b8        0x4 LONG 0x488 LOADADDR (.data)
                 0x000000bc        0x4 LONG 0x1ffff000 ADDR (.data)
                 0x000000c0        0x4 LONG 0x0 SIZEOF (.data)
                 0x000000c4                __data_section_table_end = .
@@ -170,10 +170,10 @@ END GROUP
                 0x000000ce                fc_run
                 0x00000138                bootloader
  .after_vectors.reset
-                0x00000360       0x98 ./source/main.o
+                0x00000360       0x90 ./source/main.o
                 0x00000360                ResetISR
                 0x00000400                . = 0x400
- *fill*         0x000003f8        0x8 ff
+ *fill*         0x000003f0       0x10 ff
                 0x00000400                PROVIDE (__FLASH_CONFIG_START__ = .)
  *(SORT_BY_ALIGNMENT(.FlashConfig))
  .FlashConfig   0x00000400       0x10 ./source/main.o
@@ -183,60 +183,70 @@ END GROUP
  *(SORT_BY_ALIGNMENT(.text*))
  .text.delay    0x00000410       0x24 ./source/main.o
                 0x00000410                delay
- .text.error    0x00000434       0x40 ./source/main.o
+ .text.error    0x00000434       0x44 ./source/main.o
                 0x00000434                error
- .text.fc_init  0x00000474       0x10 ./source/main.o
-                0x00000474                fc_init
+ .text.fc_init  0x00000478       0x10 ./source/main.o
+                0x00000478                fc_init
  *(SORT_BY_ALIGNMENT(.rodata) SORT_BY_ALIGNMENT(.rodata.*) SORT_BY_ALIGNMENT(.constdata) SORT_BY_ALIGNMENT(.constdata.*))
-                0x00000484                . = ALIGN (0x4)
+                0x00000488                . = ALIGN (0x4)
 
-.glue_7         0x00000484        0x0
- .glue_7        0x00000484        0x0 linker stubs
+.glue_7         0x00000488        0x0
+ .glue_7        0x00000488        0x0 linker stubs
 
-.glue_7t        0x00000484        0x0
- .glue_7t       0x00000484        0x0 linker stubs
+.glue_7t        0x00000488        0x0
+ .glue_7t       0x00000488        0x0 linker stubs
 
-.vfp11_veneer   0x00000484        0x0
- .vfp11_veneer  0x00000484        0x0 linker stubs
+.vfp11_veneer   0x00000488        0x0
+ .vfp11_veneer  0x00000488        0x0 linker stubs
 
-.v4_bx          0x00000484        0x0
- .v4_bx         0x00000484        0x0 linker stubs
+.v4_bx          0x00000488        0x0
+ .v4_bx         0x00000488        0x0 linker stubs
 
-.iplt           0x00000484        0x0
- .iplt          0x00000484        0x0 ./source/main.o
+.iplt           0x00000488        0x0
+ .iplt          0x00000488        0x0 ./source/main.o
 
-.rel.dyn        0x00000484        0x0
- .rel.iplt      0x00000484        0x0 ./source/main.o
+.rel.dyn        0x00000488        0x0
+ .rel.iplt      0x00000488        0x0 ./source/main.o
 
 .ARM.extab
  *(SORT_BY_ALIGNMENT(.ARM.extab*) SORT_BY_ALIGNMENT(.gnu.linkonce.armextab.*))
-                0x00000484                __exidx_start = .
+                0x00000488                __exidx_start = .
 
 .ARM.exidx
  *(SORT_BY_ALIGNMENT(.ARM.exidx*) SORT_BY_ALIGNMENT(.gnu.linkonce.armexidx.*))
-                0x00000484                __exidx_end = .
-                0x00000484                _etext = .
+                0x00000488                __exidx_end = .
+                0x00000488                _etext = .
 
 .uninit_RESERVED
                 0x1ffff000        0x0
+                0x1ffff000                _start_uninit_RESERVED = .
  *(SORT_BY_ALIGNMENT(.bss.$RESERVED*))
                 0x1ffff000                . = ALIGN (0x4)
                 0x1ffff000                _end_uninit_RESERVED = .
 
-.data           0x1ffff000        0x0 load address 0x00000484
+.data           0x1ffff000        0x0 load address 0x00000488
  FILL mask 0xff
                 0x1ffff000                _data = .
+                [!provide]                PROVIDE (__start_data_RAM = .)
+                [!provide]                PROVIDE (__start_data_SRAM = .)
  *(SORT_BY_ALIGNMENT(vtable))
  *(SORT_BY_ALIGNMENT(.ramfunc*))
+ *(SORT_BY_ALIGNMENT(CodeQuickAccess))
+ *(SORT_BY_ALIGNMENT(DataQuickAccess))
+ *(SORT_BY_ALIGNMENT(RamFunction))
  *(SORT_BY_ALIGNMENT(.data*))
                 0x1ffff000                . = ALIGN (0x4)
                 0x1ffff000                _edata = .
+                [!provide]                PROVIDE (__end_data_RAM = .)
+                [!provide]                PROVIDE (__end_data_SRAM = .)
 
-.igot.plt       0x1ffff000        0x0 load address 0x00000484
+.igot.plt       0x1ffff000        0x0 load address 0x00000488
  .igot.plt      0x1ffff000        0x0 ./source/main.o
 
-.bss            0x1ffff000        0xc load address 0x00000484
+.bss            0x1ffff000        0xc
                 0x1ffff000                _bss = .
+                [!provide]                PROVIDE (__start_bss_RAM = .)
+                [!provide]                PROVIDE (__start_bss_SRAM = .)
  *(SORT_BY_ALIGNMENT(.bss*))
  .bss.app_vtor  0x1ffff000        0x4 ./source/main.o
                 0x1ffff000                app_vtor
@@ -248,16 +258,22 @@ END GROUP
  *(SORT_BY_ALIGNMENT(COMMON))
                 0x1ffff00c                . = ALIGN (0x4)
                 0x1ffff00c                _ebss = .
+                [!provide]                PROVIDE (__end_bss_RAM = .)
+                [!provide]                PROVIDE (__end_bss_SRAM = .)
                 [!provide]                PROVIDE (end = .)
 
-.noinit         0x1ffff00c        0x0 load address 0x00000484
+.noinit         0x1ffff00c        0x0
                 0x1ffff00c                _noinit = .
+                [!provide]                PROVIDE (__start_noinit_RAM = .)
+                [!provide]                PROVIDE (__start_noinit_SRAM = .)
  *(SORT_BY_ALIGNMENT(.noinit*))
                 0x1ffff00c                . = ALIGN (0x4)
                 0x1ffff00c                _end_noinit = .
+                [!provide]                PROVIDE (__end_noinit_RAM = .)
+                [!provide]                PROVIDE (__end_noinit_SRAM = .)
                 0x00000400                _HeapSize = 0x400
 
-.heap           0x1ffff00c      0x400 load address 0x00000484
+.heap           0x1ffff00c      0x400
                 0x1ffff00c                _pvHeapStart = .
                 0x1ffff40c                . = (. + _HeapSize)
  *fill*         0x1ffff00c      0x400 
@@ -266,7 +282,7 @@ END GROUP
                 0x00000400                _StackSize = 0x400
 
 .heap2stackfill
-                0x1ffff40c      0x400 load address 0x00000484
+                0x1ffff40c      0x400
                 0x1ffff80c                . = (. + _StackSize)
  *fill*         0x1ffff40c      0x400 
 
@@ -275,41 +291,41 @@ END GROUP
                 0x20002c00                . = ALIGN (0x4)
                 0x20003000                _vStackTop = (. + _StackSize)
                 0x00000000                _image_start = LOADADDR (.text)
-                0x00000484                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00000484                _image_size = (_image_end - _image_start)
+                0x00000488                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00000488                _image_size = (_image_end - _image_start)
 OUTPUT(MKE04_MIDI_Bootloader.axf elf32-littlearm)
 
-.debug_info     0x00000000      0xaac
- .debug_info    0x00000000      0xaac ./source/main.o
+.debug_info     0x00000000      0xbe5
+ .debug_info    0x00000000      0xbe5 ./source/main.o
 
-.debug_abbrev   0x00000000      0x305
- .debug_abbrev  0x00000000      0x305 ./source/main.o
+.debug_abbrev   0x00000000      0x355
+ .debug_abbrev  0x00000000      0x355 ./source/main.o
 
-.debug_loc      0x00000000      0x36f
- .debug_loc     0x00000000      0x36f ./source/main.o
+.debug_loc      0x00000000      0x3ce
+ .debug_loc     0x00000000      0x3ce ./source/main.o
 
 .debug_aranges  0x00000000       0x58
  .debug_aranges
                 0x00000000       0x58 ./source/main.o
 
-.debug_ranges   0x00000000       0xe0
- .debug_ranges  0x00000000       0xe0 ./source/main.o
+.debug_ranges   0x00000000       0xd0
+ .debug_ranges  0x00000000       0xd0 ./source/main.o
 
-.debug_line     0x00000000      0x372
- .debug_line    0x00000000      0x372 ./source/main.o
+.debug_line     0x00000000      0x807
+ .debug_line    0x00000000      0x807 ./source/main.o
 
-.debug_str      0x00000000      0x480
- .debug_str     0x00000000      0x480 ./source/main.o
-                                0x4a9 (size before relaxing)
+.debug_str      0x00000000      0x4a6
+ .debug_str     0x00000000      0x4a6 ./source/main.o
+                                0x4cf (size before relaxing)
 
-.comment        0x00000000       0x7f
- .comment       0x00000000       0x7f ./source/main.o
-                                 0x80 (size before relaxing)
+.comment        0x00000000       0x76
+ .comment       0x00000000       0x76 ./source/main.o
+                                 0x77 (size before relaxing)
 
 .ARM.attributes
-                0x00000000       0x30
+                0x00000000       0x2a
  .ARM.attributes
-                0x00000000       0x32 ./source/main.o
+                0x00000000       0x2c ./source/main.o
 
-.debug_frame    0x00000000       0xc8
- .debug_frame   0x00000000       0xc8 ./source/main.o
+.debug_frame    0x00000000       0xcc
+ .debug_frame   0x00000000       0xcc ./source/main.o

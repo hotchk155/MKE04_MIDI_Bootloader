@@ -4,8 +4,7 @@
 
 *.pydevproject
 .metadata
-.mcuxpressoide_packages_support
-FreeRTOS_TAD_logs
+.metadata/
 bin/
 tmp/
 *.tmp
@@ -44,10 +43,21 @@ local.properties
 
 [Dd]ebug/
 [Rr]elease/
+SYX/
 x64/
 build/
 [Bb]in/
 [Oo]bj/
+Noodlebox/SYX/source
+Noodlebox/SYX/startup
+Noodlebox/SYX/makefile
+*.d
+*.o
+*.mk
+*.map
+*.axf
+
+
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -212,3 +222,7 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+NoodleBox/SYX/NoodleBox.hex
+NoodleBox/SYX/Noodlebox.syx
+.mcuxpressoide_packages_support/
+_bak/

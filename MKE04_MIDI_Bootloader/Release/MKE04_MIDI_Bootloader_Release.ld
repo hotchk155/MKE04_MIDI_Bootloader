@@ -1,12 +1,12 @@
 /*
  * GENERATED FILE - DO NOT EDIT
- * Copyright (c) 2008 - 2013 Code Red Technologies Ltd, 
- * Copyright 2015, 2018 NXP
- * (c) NXP Semiconductors 2013-2019
+ * Copyright (c) 2008-2013 Code Red Technologies Ltd,
+ * Copyright 2015, 2018-2019 NXP
+ * (c) NXP Semiconductors 2013-2020
  * Generated linker script file for MKE04Z128xxx4
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v10.3.1 [Build 2233] [2019-02-20] on 14-Oct-2019 14:33:41
+ * MCUXpresso IDE v11.1.0 [Build 3209] [2019-12-12] on 25-Jun-2020 14:42:00
  */
 
 INCLUDE "MKE04_MIDI_Bootloader_Release_library.ld"
@@ -16,7 +16,7 @@ ENTRY(ResetISR)
 
 SECTIONS
 {
-    /* MAIN TEXT SECTION */
+     /* MAIN TEXT SECTION */
     .text : ALIGN(4)
     {
         FILL(0xff)
@@ -75,44 +75,60 @@ SECTIONS
     _etext = .;
         
     /* MAIN DATA SECTION */
-    .uninit_RESERVED : ALIGN(4)
+    .uninit_RESERVED (NOLOAD) : ALIGN(4)
     {
+        _start_uninit_RESERVED = .;
         KEEP(*(.bss.$RESERVED*))
-        . = ALIGN(4) ;
+       . = ALIGN(4) ;
         _end_uninit_RESERVED = .;
-    } > SRAM
+    } > SRAM AT> SRAM
 
     /* Main DATA section (SRAM) */
     .data : ALIGN(4)
     {
        FILL(0xff)
        _data = . ;
+       PROVIDE(__start_data_RAM = .) ;
+       PROVIDE(__start_data_SRAM = .) ;
        *(vtable)
        *(.ramfunc*)
+       KEEP(*(CodeQuickAccess))
+       KEEP(*(DataQuickAccess))
+       *(RamFunction)
        *(.data*)
        . = ALIGN(4) ;
        _edata = . ;
+       PROVIDE(__end_data_RAM = .) ;
+       PROVIDE(__end_data_SRAM = .) ;
     } > SRAM AT>PROGRAM_FLASH
 
     /* MAIN BSS SECTION */
     .bss : ALIGN(4)
     {
         _bss = .;
+        PROVIDE(__start_bss_RAM = .) ;
+        PROVIDE(__start_bss_SRAM = .) ;
         *(.bss*)
         *(COMMON)
         . = ALIGN(4) ;
         _ebss = .;
+        PROVIDE(__end_bss_RAM = .) ;
+        PROVIDE(__end_bss_SRAM = .) ;
         PROVIDE(end = .);
-    } > SRAM
+    } > SRAM AT> SRAM
 
     /* DEFAULT NOINIT SECTION */
     .noinit (NOLOAD): ALIGN(4)
     {
         _noinit = .;
-        *(.noinit*) 
+        PROVIDE(__start_noinit_RAM = .) ;
+        PROVIDE(__start_noinit_SRAM = .) ;
+        *(.noinit*)
          . = ALIGN(4) ;
         _end_noinit = .;
-    } > SRAM
+       PROVIDE(__end_noinit_RAM = .) ;
+       PROVIDE(__end_noinit_SRAM = .) ;        
+    } > SRAM AT> SRAM
 
     /* Reserve and place Heap within memory map */
     _HeapSize = 0x400;

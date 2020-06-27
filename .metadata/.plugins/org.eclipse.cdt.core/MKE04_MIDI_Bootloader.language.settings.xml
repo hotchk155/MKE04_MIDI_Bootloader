@@ -252,17 +252,17 @@
 						<entry kind="includePath" name="/${ProjName}/device">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4" value=""/>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value=""/>
-						<entry kind="macro" name="CR_INTEGER_PRINTF" value=""/>
-						<entry kind="macro" name="FSL_RTOS_BM" value=""/>
-						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4" value="1"/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value="1"/>
+						<entry kind="macro" name="CR_INTEGER_PRINTF" value="1"/>
+						<entry kind="macro" name="FSL_RTOS_BM" value="1"/>
+						<entry kind="macro" name="NDEBUG" value="1"/>
 						<entry kind="macro" name="PRINTF_FLOAT_ENABLE" value="0"/>
 						<entry kind="macro" name="SDK_DEBUGCONSOLE" value="0"/>
-						<entry kind="macro" name="SDK_OS_BAREMETAL" value=""/>
-						<entry kind="macro" name="__MCUXPRESSO" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value=""/>
+						<entry kind="macro" name="SDK_OS_BAREMETAL" value="1"/>
+						<entry kind="macro" name="__MCUXPRESSO" value="1"/>
+						<entry kind="macro" name="__REDLIB__" value="1"/>
+						<entry kind="macro" name="__USE_CMSIS" value="1"/>
 					</resource>
 					<resource project-relative-path="source/main.c">
 						<entry kind="includePath" name="/${ProjName}/board">
@@ -280,17 +280,17 @@
 						<entry kind="includePath" name="/${ProjName}/device">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4" value=""/>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value=""/>
-						<entry kind="macro" name="CR_INTEGER_PRINTF" value=""/>
-						<entry kind="macro" name="FSL_RTOS_BM" value=""/>
-						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4" value="1"/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value="1"/>
+						<entry kind="macro" name="CR_INTEGER_PRINTF" value="1"/>
+						<entry kind="macro" name="FSL_RTOS_BM" value="1"/>
+						<entry kind="macro" name="NDEBUG" value="1"/>
 						<entry kind="macro" name="PRINTF_FLOAT_ENABLE" value="0"/>
 						<entry kind="macro" name="SDK_DEBUGCONSOLE" value="0"/>
-						<entry kind="macro" name="SDK_OS_BAREMETAL" value=""/>
-						<entry kind="macro" name="__MCUXPRESSO" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value=""/>
+						<entry kind="macro" name="SDK_OS_BAREMETAL" value="1"/>
+						<entry kind="macro" name="__MCUXPRESSO" value="1"/>
+						<entry kind="macro" name="__REDLIB__" value="1"/>
+						<entry kind="macro" name="__USE_CMSIS" value="1"/>
 					</resource>
 					<resource project-relative-path="board/clock_config.c">
 						<entry kind="includePath" name="/${ProjName}/board">
@@ -308,17 +308,17 @@
 						<entry kind="includePath" name="/${ProjName}/device">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4" value=""/>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value=""/>
-						<entry kind="macro" name="CR_INTEGER_PRINTF" value=""/>
-						<entry kind="macro" name="FSL_RTOS_BM" value=""/>
-						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4" value="1"/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value="1"/>
+						<entry kind="macro" name="CR_INTEGER_PRINTF" value="1"/>
+						<entry kind="macro" name="FSL_RTOS_BM" value="1"/>
+						<entry kind="macro" name="NDEBUG" value="1"/>
 						<entry kind="macro" name="PRINTF_FLOAT_ENABLE" value="0"/>
 						<entry kind="macro" name="SDK_DEBUGCONSOLE" value="0"/>
-						<entry kind="macro" name="SDK_OS_BAREMETAL" value=""/>
-						<entry kind="macro" name="__MCUXPRESSO" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value=""/>
+						<entry kind="macro" name="SDK_OS_BAREMETAL" value="1"/>
+						<entry kind="macro" name="__MCUXPRESSO" value="1"/>
+						<entry kind="macro" name="__REDLIB__" value="1"/>
+						<entry kind="macro" name="__USE_CMSIS" value="1"/>
 					</resource>
 					<resource project-relative-path="device/system_MKE04Z1284.c">
 						<entry kind="includePath" name="/${ProjName}/board">
@@ -336,17 +336,17 @@
 						<entry kind="includePath" name="/${ProjName}/device">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4" value=""/>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value=""/>
-						<entry kind="macro" name="CR_INTEGER_PRINTF" value=""/>
-						<entry kind="macro" name="FSL_RTOS_BM" value=""/>
-						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4" value="1"/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value="1"/>
+						<entry kind="macro" name="CR_INTEGER_PRINTF" value="1"/>
+						<entry kind="macro" name="FSL_RTOS_BM" value="1"/>
+						<entry kind="macro" name="NDEBUG" value="1"/>
 						<entry kind="macro" name="PRINTF_FLOAT_ENABLE" value="0"/>
 						<entry kind="macro" name="SDK_DEBUGCONSOLE" value="0"/>
-						<entry kind="macro" name="SDK_OS_BAREMETAL" value=""/>
-						<entry kind="macro" name="__MCUXPRESSO" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value=""/>
+						<entry kind="macro" name="SDK_OS_BAREMETAL" value="1"/>
+						<entry kind="macro" name="__MCUXPRESSO" value="1"/>
+						<entry kind="macro" name="__REDLIB__" value="1"/>
+						<entry kind="macro" name="__USE_CMSIS" value="1"/>
 					</resource>
 					<resource project-relative-path="board/pin_mux.c">
 						<entry kind="includePath" name="/${ProjName}/board">
@@ -364,17 +364,17 @@
 						<entry kind="includePath" name="/${ProjName}/device">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4" value=""/>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value=""/>
-						<entry kind="macro" name="CR_INTEGER_PRINTF" value=""/>
-						<entry kind="macro" name="FSL_RTOS_BM" value=""/>
-						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4" value="1"/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value="1"/>
+						<entry kind="macro" name="CR_INTEGER_PRINTF" value="1"/>
+						<entry kind="macro" name="FSL_RTOS_BM" value="1"/>
+						<entry kind="macro" name="NDEBUG" value="1"/>
 						<entry kind="macro" name="PRINTF_FLOAT_ENABLE" value="0"/>
 						<entry kind="macro" name="SDK_DEBUGCONSOLE" value="0"/>
-						<entry kind="macro" name="SDK_OS_BAREMETAL" value=""/>
-						<entry kind="macro" name="__MCUXPRESSO" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value=""/>
+						<entry kind="macro" name="SDK_OS_BAREMETAL" value="1"/>
+						<entry kind="macro" name="__MCUXPRESSO" value="1"/>
+						<entry kind="macro" name="__REDLIB__" value="1"/>
+						<entry kind="macro" name="__USE_CMSIS" value="1"/>
 					</resource>
 					<resource project-relative-path="board/peripherals.c">
 						<entry kind="includePath" name="/${ProjName}/board">
@@ -392,17 +392,17 @@
 						<entry kind="includePath" name="/${ProjName}/device">
 							<flag value="VALUE_WORKSPACE_PATH"/>
 						</entry>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4" value=""/>
-						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value=""/>
-						<entry kind="macro" name="CR_INTEGER_PRINTF" value=""/>
-						<entry kind="macro" name="FSL_RTOS_BM" value=""/>
-						<entry kind="macro" name="NDEBUG" value=""/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4" value="1"/>
+						<entry kind="macro" name="CPU_MKE04Z128VLD4_cm0plus" value="1"/>
+						<entry kind="macro" name="CR_INTEGER_PRINTF" value="1"/>
+						<entry kind="macro" name="FSL_RTOS_BM" value="1"/>
+						<entry kind="macro" name="NDEBUG" value="1"/>
 						<entry kind="macro" name="PRINTF_FLOAT_ENABLE" value="0"/>
 						<entry kind="macro" name="SDK_DEBUGCONSOLE" value="0"/>
-						<entry kind="macro" name="SDK_OS_BAREMETAL" value=""/>
-						<entry kind="macro" name="__MCUXPRESSO" value=""/>
-						<entry kind="macro" name="__REDLIB__" value=""/>
-						<entry kind="macro" name="__USE_CMSIS" value=""/>
+						<entry kind="macro" name="SDK_OS_BAREMETAL" value="1"/>
+						<entry kind="macro" name="__MCUXPRESSO" value="1"/>
+						<entry kind="macro" name="__REDLIB__" value="1"/>
+						<entry kind="macro" name="__USE_CMSIS" value="1"/>
 					</resource>
 				</language>
 			</provider>
