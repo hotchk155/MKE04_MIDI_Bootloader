@@ -6,7 +6,7 @@
  * Generated linker script file for MKE04Z128xxx4
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.1.0 [Build 3209] [2019-12-12] on 25-Jun-2020 14:42:00
+ * MCUXpresso IDE v11.1.0 [Build 3209] [2019-12-12] on 30-Jun-2020 21:29:52
  */
 
 MEMORY

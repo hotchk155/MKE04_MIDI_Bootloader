@@ -165,15 +165,15 @@ END GROUP
                 0x000000cc                __section_table_end = .
  *(SORT_BY_ALIGNMENT(.after_vectors*))
  .after_vectors.zzz
-                0x000000cc      0x294 ./source/main.o
+                0x000000cc      0x29c ./source/main.o
                 0x000000cc                IntDefaultHandler
                 0x000000ce                fc_run
                 0x00000138                bootloader
  .after_vectors.reset
-                0x00000360       0x90 ./source/main.o
-                0x00000360                ResetISR
+                0x00000368       0x90 ./source/main.o
+                0x00000368                ResetISR
                 0x00000400                . = 0x400
- *fill*         0x000003f0       0x10 ff
+ *fill*         0x000003f8        0x8 ff
                 0x00000400                PROVIDE (__FLASH_CONFIG_START__ = .)
  *(SORT_BY_ALIGNMENT(.FlashConfig))
  .FlashConfig   0x00000400       0x10 ./source/main.o
@@ -295,24 +295,24 @@ END GROUP
                 0x00000488                _image_size = (_image_end - _image_start)
 OUTPUT(MKE04_MIDI_Bootloader.axf elf32-littlearm)
 
-.debug_info     0x00000000      0xbe5
- .debug_info    0x00000000      0xbe5 ./source/main.o
+.debug_info     0x00000000      0xc07
+ .debug_info    0x00000000      0xc07 ./source/main.o
 
-.debug_abbrev   0x00000000      0x355
- .debug_abbrev  0x00000000      0x355 ./source/main.o
+.debug_abbrev   0x00000000      0x35e
+ .debug_abbrev  0x00000000      0x35e ./source/main.o
 
-.debug_loc      0x00000000      0x3ce
- .debug_loc     0x00000000      0x3ce ./source/main.o
+.debug_loc      0x00000000      0x40c
+ .debug_loc     0x00000000      0x40c ./source/main.o
 
 .debug_aranges  0x00000000       0x58
  .debug_aranges
                 0x00000000       0x58 ./source/main.o
 
-.debug_ranges   0x00000000       0xd0
- .debug_ranges  0x00000000       0xd0 ./source/main.o
+.debug_ranges   0x00000000       0xd8
+ .debug_ranges  0x00000000       0xd8 ./source/main.o
 
-.debug_line     0x00000000      0x807
- .debug_line    0x00000000      0x807 ./source/main.o
+.debug_line     0x00000000      0x7fd
+ .debug_line    0x00000000      0x7fd ./source/main.o
 
 .debug_str      0x00000000      0x4a6
  .debug_str     0x00000000      0x4a6 ./source/main.o

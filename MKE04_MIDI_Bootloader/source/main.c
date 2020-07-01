@@ -45,6 +45,7 @@
 #define SYSEX_ID0			0x00
 #define SYSEX_ID1			0x7F
 #define SYSEX_END			0xF7
+#define MIDI_ACTIVE_SENSE   0xFE
 
 // define GPIO bits for inputs and outputs
 #define GPIOA_BIT_B5 (1U<<((1*8) + 5))
@@ -363,7 +364,7 @@ void bootloader(void) {
     	//////////////////////////////////////////////////////////////////////////////////////
 
         byte sysex[SYSEX_BUF_SIZE];
-      	for(i = 0; i<SYSEX_BUF_SIZE; ++i) {
+      	for(i = 0; i<SYSEX_BUF_SIZE; ) {
       		// wait for a character to be received
       		while(!(UART0->S1 & UART_S1_RDRF_MASK)) {
       			 //check whether an error occurred
@@ -371,8 +372,11 @@ void bootloader(void) {
         			error(ERR_SERIAL);
       			}
       		}
-      		// store the received byte
-      		sysex[i] = UART0->D;
+      		// store the received byte if not active sense
+      		byte ch = UART0->D;
+			if(ch != MIDI_ACTIVE_SENSE) {
+	      		sysex[i++] = ch;
+			}
       	}
 
     	//////////////////////////////////////////////////////////////////////////////////////
