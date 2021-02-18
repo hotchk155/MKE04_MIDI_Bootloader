@@ -2,11 +2,11 @@
  * GENERATED FILE - DO NOT EDIT
  * Copyright (c) 2008-2013 Code Red Technologies Ltd,
  * Copyright 2015, 2018-2019 NXP
- * (c) NXP Semiconductors 2013-2020
+ * (c) NXP Semiconductors 2013-2021
  * Generated linker script file for MKE04Z128xxx4
  * Created from memory.ldt by FMCreateLinkMemory
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.1.0 [Build 3209] [2019-12-12] on 30-Jun-2020 21:29:52
+ * MCUXpresso IDE v11.1.0 [Build 3209] [2019-12-12] on 07-Jan-2021 20:03:10
  */
 
 MEMORY
