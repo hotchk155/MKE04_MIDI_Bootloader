@@ -144,7 +144,7 @@ END GROUP
                 0x20003000                __top_SRAM = 0x20003000
                 0x20003000                __top_RAM = 0x20003000
 
-.text           0x00000000      0x488
+.text           0x00000000      0x484
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(SORT_BY_ALIGNMENT(.isr_vector))
@@ -154,7 +154,7 @@ END GROUP
                 0x000000b8                . = ALIGN (0x4)
                 0x000000b8                __section_table_start = .
                 0x000000b8                __data_section_table = .
-                0x000000b8        0x4 LONG 0x488 LOADADDR (.data)
+                0x000000b8        0x4 LONG 0x484 LOADADDR (.data)
                 0x000000bc        0x4 LONG 0x1ffff000 ADDR (.data)
                 0x000000c0        0x4 LONG 0x0 SIZEOF (.data)
                 0x000000c4                __data_section_table_end = .
@@ -165,15 +165,15 @@ END GROUP
                 0x000000cc                __section_table_end = .
  *(SORT_BY_ALIGNMENT(.after_vectors*))
  .after_vectors.zzz
-                0x000000cc      0x29c ./source/main.o
+                0x000000cc      0x248 ./source/main.o
                 0x000000cc                IntDefaultHandler
                 0x000000ce                fc_run
                 0x00000138                bootloader
  .after_vectors.reset
-                0x00000368       0x90 ./source/main.o
-                0x00000368                ResetISR
+                0x00000314       0xac ./source/main.o
+                0x00000314                ResetISR
                 0x00000400                . = 0x400
- *fill*         0x000003f8        0x8 ff
+ *fill*         0x000003c0       0x40 ff
                 0x00000400                PROVIDE (__FLASH_CONFIG_START__ = .)
  *(SORT_BY_ALIGNMENT(.FlashConfig))
  .FlashConfig   0x00000400       0x10 ./source/main.o
@@ -183,39 +183,39 @@ END GROUP
  *(SORT_BY_ALIGNMENT(.text*))
  .text.delay    0x00000410       0x24 ./source/main.o
                 0x00000410                delay
- .text.error    0x00000434       0x44 ./source/main.o
+ .text.error    0x00000434       0x40 ./source/main.o
                 0x00000434                error
- .text.fc_init  0x00000478       0x10 ./source/main.o
-                0x00000478                fc_init
+ .text.fc_init  0x00000474       0x10 ./source/main.o
+                0x00000474                fc_init
  *(SORT_BY_ALIGNMENT(.rodata) SORT_BY_ALIGNMENT(.rodata.*) SORT_BY_ALIGNMENT(.constdata) SORT_BY_ALIGNMENT(.constdata.*))
-                0x00000488                . = ALIGN (0x4)
+                0x00000484                . = ALIGN (0x4)
 
-.glue_7         0x00000488        0x0
- .glue_7        0x00000488        0x0 linker stubs
+.glue_7         0x00000484        0x0
+ .glue_7        0x00000484        0x0 linker stubs
 
-.glue_7t        0x00000488        0x0
- .glue_7t       0x00000488        0x0 linker stubs
+.glue_7t        0x00000484        0x0
+ .glue_7t       0x00000484        0x0 linker stubs
 
-.vfp11_veneer   0x00000488        0x0
- .vfp11_veneer  0x00000488        0x0 linker stubs
+.vfp11_veneer   0x00000484        0x0
+ .vfp11_veneer  0x00000484        0x0 linker stubs
 
-.v4_bx          0x00000488        0x0
- .v4_bx         0x00000488        0x0 linker stubs
+.v4_bx          0x00000484        0x0
+ .v4_bx         0x00000484        0x0 linker stubs
 
-.iplt           0x00000488        0x0
- .iplt          0x00000488        0x0 ./source/main.o
+.iplt           0x00000484        0x0
+ .iplt          0x00000484        0x0 ./source/main.o
 
-.rel.dyn        0x00000488        0x0
- .rel.iplt      0x00000488        0x0 ./source/main.o
+.rel.dyn        0x00000484        0x0
+ .rel.iplt      0x00000484        0x0 ./source/main.o
 
 .ARM.extab
  *(SORT_BY_ALIGNMENT(.ARM.extab*) SORT_BY_ALIGNMENT(.gnu.linkonce.armextab.*))
-                0x00000488                __exidx_start = .
+                0x00000484                __exidx_start = .
 
 .ARM.exidx
  *(SORT_BY_ALIGNMENT(.ARM.exidx*) SORT_BY_ALIGNMENT(.gnu.linkonce.armexidx.*))
-                0x00000488                __exidx_end = .
-                0x00000488                _etext = .
+                0x00000484                __exidx_end = .
+                0x00000484                _etext = .
 
 .uninit_RESERVED
                 0x1ffff000        0x0
@@ -224,7 +224,7 @@ END GROUP
                 0x1ffff000                . = ALIGN (0x4)
                 0x1ffff000                _end_uninit_RESERVED = .
 
-.data           0x1ffff000        0x0 load address 0x00000488
+.data           0x1ffff000        0x0 load address 0x00000484
  FILL mask 0xff
                 0x1ffff000                _data = .
                 [!provide]                PROVIDE (__start_data_RAM = .)
@@ -240,7 +240,7 @@ END GROUP
                 [!provide]                PROVIDE (__end_data_RAM = .)
                 [!provide]                PROVIDE (__end_data_SRAM = .)
 
-.igot.plt       0x1ffff000        0x0 load address 0x00000488
+.igot.plt       0x1ffff000        0x0 load address 0x00000484
  .igot.plt      0x1ffff000        0x0 ./source/main.o
 
 .bss            0x1ffff000        0xc
@@ -291,18 +291,18 @@ END GROUP
                 0x20002c00                . = ALIGN (0x4)
                 0x20003000                _vStackTop = (. + _StackSize)
                 0x00000000                _image_start = LOADADDR (.text)
-                0x00000488                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00000488                _image_size = (_image_end - _image_start)
+                0x00000484                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00000484                _image_size = (_image_end - _image_start)
 OUTPUT(MKE04_MIDI_Bootloader.axf elf32-littlearm)
 
-.debug_info     0x00000000      0xc07
- .debug_info    0x00000000      0xc07 ./source/main.o
+.debug_info     0x00000000      0xb8e
+ .debug_info    0x00000000      0xb8e ./source/main.o
 
-.debug_abbrev   0x00000000      0x35e
- .debug_abbrev  0x00000000      0x35e ./source/main.o
+.debug_abbrev   0x00000000      0x32e
+ .debug_abbrev  0x00000000      0x32e ./source/main.o
 
-.debug_loc      0x00000000      0x40c
- .debug_loc     0x00000000      0x40c ./source/main.o
+.debug_loc      0x00000000      0x40f
+ .debug_loc     0x00000000      0x40f ./source/main.o
 
 .debug_aranges  0x00000000       0x58
  .debug_aranges
@@ -311,12 +311,12 @@ OUTPUT(MKE04_MIDI_Bootloader.axf elf32-littlearm)
 .debug_ranges   0x00000000       0xd8
  .debug_ranges  0x00000000       0xd8 ./source/main.o
 
-.debug_line     0x00000000      0x7fd
- .debug_line    0x00000000      0x7fd ./source/main.o
+.debug_line     0x00000000      0x7a6
+ .debug_line    0x00000000      0x7a6 ./source/main.o
 
-.debug_str      0x00000000      0x4a6
- .debug_str     0x00000000      0x4a6 ./source/main.o
-                                0x4cf (size before relaxing)
+.debug_str      0x00000000      0x494
+ .debug_str     0x00000000      0x494 ./source/main.o
+                                0x4bd (size before relaxing)
 
 .comment        0x00000000       0x76
  .comment       0x00000000       0x76 ./source/main.o
