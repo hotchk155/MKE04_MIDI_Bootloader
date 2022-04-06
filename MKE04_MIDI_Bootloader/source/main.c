@@ -17,13 +17,13 @@
 // INCLUDES
 //
 #include "MKE04Z1284.h"
-//#define IS_NOODLEBOX 1
 //#define NB_PROTOTYPE 1
-#define IS_PLAYFADER 1
 
 //
 // MACRO DEFS
 //
+// specific definitions for this product
+#define SYSEX_PRODUCT		0x21			// SYSEX product ID
 #define APP_BASE_ADDR		0x0600			// Application base address
 
 // definitions to specify structure of a sysex message
@@ -51,40 +51,31 @@
 #define GPIOA_BIT_B5 (1U<<((1*8) + 5))
 #define GPIOA_BIT_C2 (1U<<((2*8) + 2))
 #define GPIOA_BIT_C3 (1U<<((2*8) + 3))
-#define GPIOA_BIT_C5 (1U<<((2*8) + 5))
-#define GPIOA_BIT_C6 (1U<<((2*8) + 6))
-#define GPIOA_BIT_D3 (1U<<((3*8) + 3))
-#define GPIOA_BIT_D4 (1U<<((3*8) + 4))
 #define GPIOB_BIT_E1 (1U<<((0*8) + 1))
 #define GPIOB_BIT_E2 (1U<<((0*8) + 2))
 #define GPIOB_BIT_E7 (1U<<((0*8) + 7))
 
+#if NB_PROTOTYPE
+	#define GPIOB_BIT_POWERSWITCH	GPIOB_BIT_E1
+#else
+	#define GPIOB_BIT_POWERSWITCH	GPIOB_BIT_E7
+#endif
+
+/*
+ CDigitalOut PowerControl(kGPIO_PORTE, 2);
+ CDigitalIn OffSwitch(kGPIO_PORTE, 7);
+
+  CPulseOut g_gate_led(kGPIO_PORTB, 5);
+ CPulseOut g_tempo_led(kGPIO_PORTC, 2);
+ CPulseOut g_midi_led(kGPIO_PORTC, 3);
+*/
+
+// helper macros for LEDs
+#define LED_1 	GPIOA_BIT_C2
+#define LED_2 	GPIOA_BIT_C3
+#define LED_3 	GPIOA_BIT_B5
 #define LED_ON(b) 	GPIOA->PSOR = (b)
 #define LED_OFF(b) 	GPIOA->PCOR = (b)
-
-
-// specific definitions for this product
-// ---- NOODLEBOX ----
-#if IS_NOODLEBOX
-	#define SYSEX_PRODUCT		0x21			// SYSEX product ID
-	#if NB_PROTOTYPE
-		#define GPIOB_BIT_POWERSWITCH	GPIOB_BIT_E1
-	#else
-		#define GPIOB_BIT_POWERSWITCH	GPIOB_BIT_E7
-	#endif
-	#define LED_A 	GPIOA_BIT_C2	// tempo LED
-	#define LED_B 	GPIOA_BIT_C3	// midi LED
-	#define LED_E 	GPIOA_BIT_B5	// gate LED
-#endif
-// ---- PLAYFADEr ----
-#if IS_PLAYFADER
-	#define SYSEX_PRODUCT		0x24			// SYSEX product ID
-	#define LED_A 				GPIOA_BIT_D3
-	#define LED_B 				GPIOA_BIT_D4
-	#define LED_E 				GPIOA_BIT_D4
-	#define GPIOA_SWDRIVE		GPIOA_BIT_C6
-	#define GPIOA_SWREAD		GPIOA_BIT_C5
-#endif
 
 // define pointer to UART structure
 #define UART0 ((UART_Type *)UART0_BASE)
@@ -214,10 +205,6 @@ void ResetISR(void) {
     __asm volatile ("cpsie i");
 
 
-#if IS_NOODLEBOX
-    // Initialise GPIO for LEDs
-	GPIOA->PDDR |= (GPIOA_BIT_B5|GPIOA_BIT_C2|GPIOA_BIT_C3);
-
     // configure the digital input for the "off" switch
     // and allow to settle
 	GPIOB->PDDR &= ~(GPIOB_BIT_POWERSWITCH);
@@ -228,22 +215,6 @@ void ResetISR(void) {
 	// is the "off" switch being pressed? (this is the user option
 	// to start up the bootloader at power on
     if(!(GPIOB->PDIR & GPIOB_BIT_POWERSWITCH)) {
-#endif
-
-#if IS_PLAYFADER
-    GPIOA->PDDR |= (GPIOA_BIT_D3|GPIOA_BIT_D4|GPIOA_BIT_D4|GPIOA_BIT_C6);
-
-    // configure the digital input for switch row 1, drive col 1 low, wait to settle
-	GPIOA->PDDR &= ~(GPIOA_SWREAD);
-	GPIOA->PIDR &= ~(GPIOA_SWREAD);
-	PORT->PUE0 |= (GPIOA_SWREAD);
-	GPIOA->PCOR |= GPIOA_SWDRIVE;
-    delay(10);
-
-	// is the "off" switch being pressed? (this is the user option
-	// to start up the bootloader at power on
-    if(!(GPIOA->PDIR & GPIOA_SWREAD)) {
-#endif
 
     	// run the bootloader (should not return)
     	bootloader();
@@ -287,13 +258,13 @@ void delay(int count) {
 // Report an error by flashing red LED
 ///////////////////////////////////////////////////////////////////////////
 void error(int code) {
-	LED_OFF(LED_A);
-	LED_OFF(LED_B);
+	LED_OFF(LED_1);
+	LED_OFF(LED_2);
 	for(;;) {
 		for(int i=0; i<code; ++i) {
-			LED_ON(LED_E);
+			LED_ON(LED_3);
 			delay(500);
-			LED_OFF(LED_E);
+			LED_OFF(LED_3);
 			delay(500);
 		}
 		delay(2000);
@@ -346,7 +317,6 @@ void fc_run() {
 __attribute__ ((section(".after_vectors.zzz")))
 void bootloader(void) {
 
-#if IS_NOODLEBOX
 	// OUTDIV1 = 0
 	// OUTDIV2 = 1
 	// OUTDIV3 = 1
@@ -368,7 +338,8 @@ void bootloader(void) {
 	GPIOB->PDDR |= GPIOB_BIT_E2;
 	GPIOB->PSOR = GPIOB_BIT_E2;
 
-#endif
+    // Initialise GPIO for LEDs and switch
+	GPIOA->PDDR |= (GPIOA_BIT_B5|GPIOA_BIT_C2|GPIOA_BIT_C3);
 
 	// Initialise the UART for 31250bps receive
     SIM->SCGC |= SIM_SCGC_UART0_MASK;
@@ -377,9 +348,9 @@ void bootloader(void) {
     UART0->C2 |= UART_C2_RE_MASK;
 
 	// set LEDs to initial state
-    LED_OFF(LED_E) ;
-    LED_ON(LED_A);
-    LED_ON(LED_B);
+    LED_ON(LED_1);
+    LED_ON(LED_2);
+    LED_OFF(LED_3) ;
 
 	int i;
     int seq_no = 0;
@@ -441,11 +412,11 @@ void bootloader(void) {
     	// end of data
     	if(!sysex[SYSEX_SEQ_OFS]) {
     		for(;;) {
-    			LED_ON(LED_A);
-    		    LED_OFF(LED_B);
+    			LED_ON(LED_1);
+    		    LED_OFF(LED_2);
     			delay(200);
-    			LED_OFF(LED_A);
-    		    LED_ON(LED_B);
+    			LED_OFF(LED_1);
+    		    LED_ON(LED_2);
     			delay(200);
     		}
     	}
@@ -515,10 +486,10 @@ void bootloader(void) {
 
     	// toggle the blue LED with each data block
     	if(seq_no & 1) {
-    		LED_ON(LED_A);
+    		LED_ON(LED_1);
     	}
     	else {
-    		LED_OFF(LED_A);
+    		LED_OFF(LED_1);
     	}
     }
 }

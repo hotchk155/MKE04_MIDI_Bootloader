@@ -6,7 +6,7 @@
  * Generated linker script file for MKE04Z128xxx4
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.1.0 [Build 3209] [2019-12-12] on 23-Feb-2021 22:15:21
+ * MCUXpresso IDE v11.1.0 [Build 3209] [2019-12-12] on 07-Jan-2021 20:03:10
  */
 
 INCLUDE "MKE04_MIDI_Bootloader_Release_library.ld"
